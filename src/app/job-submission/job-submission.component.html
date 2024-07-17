@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Submit New Job</h2>
+    <form (ngSubmit)="submitJob()">
+      <div class="form-group">
+        <label for="jobName">Job Name</label>
+        <input type="text" class="form-control" id="jobName" [(ngModel)]="jobName" name="jobName" required>
+      </div>
+      <div class="form-group">
+        <label for="jobDuration">Job Duration (ISO-8601 format, e.g., PT10S for 10 seconds)</label>
+        <input type="text" class="form-control" id="jobDuration" [(ngModel)]="jobDuration" name="jobDuration" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Job</button>
+    </form>
+  </div>
